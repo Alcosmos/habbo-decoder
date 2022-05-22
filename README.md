@@ -11,9 +11,9 @@ Version 1.0.
 ![https://i.imgur.com/Srmzf1I.png](https://i.imgur.com/Srmzf1I.png)
 ![https://i.imgur.com/omsgDhu.png](https://i.imgur.com/omsgDhu.png)
 
-[Runnable for Linux](https://archive.alcosmos.net/Alcosmos/Git/habbo_decoder/binaries/HabboCalculator-Linux.zip)
+[Runnable for Linux](https://archive.alcosmos.net/Alcosmos/Git/habbo_decoder/binaries/HabboDecoder-Linux.zip)
 
-[Runnable for Windows](https://archive.alcosmos.net/Alcosmos/Git/habbo_decoder/binaries/HabboCalculator-Windows.zip)
+[Runnable for Windows](https://archive.alcosmos.net/Alcosmos/Git/habbo_decoder/binaries/HabboDecoder-Windows.zip)
 
 [Java JAR](https://archive.alcosmos.net/Alcosmos/Git/habbo_decoder/binaries/HabboDecoder-1.0.jar)
 
