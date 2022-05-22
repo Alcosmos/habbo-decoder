@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="0" vgap="0"
+		  styleClass="root"
+		  fx:controller="net.alcosmos.decoder.controller.CalcController">
+	<padding>
+		<Insets bottom="0" left="0" right="0" top="0"/>
+	</padding>
+	
+	<GridPane id="calcGrid">
+		<HBox GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="boxText">
+			<Text text="Base64"/>
+		</HBox>
+		<TextField text="1540" fx:id="encodeB64Text" GridPane.rowIndex="1" GridPane.columnIndex="0" editable="true" disable="false" styleClass="boxTextField"/>
+		<Button text="Encode to B64" GridPane.rowIndex="2" GridPane.columnIndex="0" focusTraversable="false" styleClass="wide" onMouseClicked="#encodeB64"/>
+		<TextField text="XD" fx:id="decodeB64Text" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" disable="false" styleClass="boxTextField"/>
+		<Button text="Decode B64" GridPane.rowIndex="2" GridPane.columnIndex="1" focusTraversable="false" styleClass="wide" onMouseClicked="#decodeB64"/>
+		
+		<VBox GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="boxText">
+			<Text text="VL64/Wire" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" />
+		</VBox>
+		<TextField text="6756" fx:id="encodeVL64Text" GridPane.rowIndex="4" GridPane.columnIndex="0" editable="true" disable="false" styleClass="boxTextField"/>
+		<Button text="Encode to VL64" GridPane.rowIndex="5" GridPane.columnIndex="0" focusTraversable="false" styleClass="wide" onMouseClicked="#encodeVL64"/>
+		<TextField text="XYZ" fx:id="decodeVL64Text" GridPane.rowIndex="4" GridPane.columnIndex="1" editable="true" disable="false" styleClass="boxTextField"/>
+		<Button text="Decode VL64" GridPane.rowIndex="5" GridPane.columnIndex="1" focusTraversable="false" styleClass="wide" onMouseClicked="#decodeVL64"/>
+	</GridPane>
+</GridPane>

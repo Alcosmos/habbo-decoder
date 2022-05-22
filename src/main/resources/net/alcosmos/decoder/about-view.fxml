@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Hyperlink?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="0" vgap="0"
+		  styleClass="root"
+		  fx:controller="net.alcosmos.decoder.controller.AboutController">
+	<padding>
+		<Insets bottom="0" left="0" right="0" top="0"/>
+	</padding>
+	
+	<GridPane id="calcGrid">
+		<VBox GridPane.rowIndex="0" GridPane.columnIndex="0" styleClass="boxText">
+			<Text text="Alcosmos' Habbo Decoder"/>
+		</VBox>
+		<VBox GridPane.rowIndex="1" GridPane.columnIndex="0" styleClass="boxText">
+			<Text text="Replacement of the prehsitoric"/>
+			<Text text="'Nillus Packet Scout', now written"/>
+			<Text text="in Java 17 + JavaFX along with a"/>
+			<Text text="Habbo Console UI design."/>
+			<Text/>
+			<Text text="Created by Alcosmos 2021."/>
+			<Text text="Distributed under GPLv3."/>
+			<Text/>
+			<Text text="More info about the old Habbo"/>
+			<Text text="protocol can be found at:"/>
+			<Text/>
+			<Text text="alcosmos.net?tab=habbodev"/>
+		</VBox>
+	</GridPane>
+</GridPane>

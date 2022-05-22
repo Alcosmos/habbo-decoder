@@ -1,0 +1,70 @@
+@font-face {
+    src: url('volter-goldfish.ttf');
+}
+
+.root {
+	-fx-background-color: transparent;
+	-fx-font-family: "Volter (Goldfish)";
+	-fx-font-size: 9px;
+}
+
+#closeButton {
+	-fx-pref-height: 13px;
+	-fx-background-image: url("images/frames/window/top/frame_top_close.png");
+}
+
+#closeButton:hover {
+    -fx-background-image: url("images/frames/window/top/frame_top_close_hover.png");
+}
+
+#topTopCenterLeft {
+	-fx-min-width: 53px;
+	-fx-background-image: url("images/frames/window/top/frame_top_top_center_grid.png");
+}
+
+#topTopCenterRight {
+	-fx-min-width: 54px;
+	-fx-background-image: url("images/frames/window/top/frame_top_top_center_grid.png");
+	-fx-background-position: top right;
+}
+
+#topText {
+	-fx-min-width: 96px;
+	-fx-padding: 6px 0 0 0;
+	-fx-alignment: center;
+	-fx-background-image: url("images/frames/window/top/frame_top_top_center.png");
+}
+
+#topTextContent {
+	-fx-fill: #996600;
+}
+
+#topBottomCenter {
+	-fx-min-width: 215px;
+	-fx-background-image: url("images/frames/window/top/frame_top_bottom_center.png");
+}
+
+#middleLeft {
+	-fx-background-image: url("images/frames/window/frame_middle_left.png");
+}
+
+#contentGrid {
+	-fx-padding: 5px 5px 5px 5px;
+	-fx-min-height: 191px;
+	-fx-background-image: url("images/frames/window/background.png");
+}
+
+#middleRight {
+	-fx-background-image: url("images/frames/window/frame_middle_right.png");
+}
+
+#bottomCenter {
+	-fx-min-height: 21px;
+	-fx-background-image: url("images/frames/window/bottom/frame_bottom_center.png");
+	-fx-background-repeat: repeat;
+}
+
+#bottomBorder {
+	-fx-background-image: url("images/frames/window/bottom/frame_bottom_border.png");
+	-fx-background-repeat: repeat;
+}

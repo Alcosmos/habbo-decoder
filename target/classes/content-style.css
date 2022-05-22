@@ -1,0 +1,184 @@
+.boxText {
+	-fx-padding: 12px 5px 2px 5px;
+}
+
+Text {
+	-fx-fill: #EEEEEE;
+}
+
+TextArea {
+	-fx-background-color: transparent;
+}
+
+.boxTextField {
+	-fx-border-insets: 2px 2px 2px 2px;
+	-fx-max-height: 10px;
+	-fx-max-width: 100px;
+	-fx-text-inner-color: #EEEEEE;
+	-fx-border-color: #EEEEEE;
+	-fx-background-color: transparent;
+	-fx-control-inner-background: transparent;
+}
+
+#boxGrid #boxTopCenter {
+	-fx-background-image: url("images/frames/box/box_top_center.png");
+}
+
+#boxGrid #boxMiddleLeft {
+	-fx-background-image: url("images/frames/box/box_middle_left.png");
+}
+
+#boxGrid #boxMiddleRight {
+	-fx-background-image: url("images/frames/box/box_middle_right.png");
+}
+
+#boxGrid #boxBottomCenter {
+	-fx-background-image: url("images/frames/box/box_bottom_center.png");
+}
+
+#infoBox {
+	-fx-alignment: center;
+}
+
+
+
+#numberButtons {
+	-fx-width: 100%;
+	-fx-color: black;
+	-fx-border-color: #999999;
+	-fx-background-color: #777777;
+}
+
+#deleteButton {
+	-fx-background-color: #DD0000;
+	-fx-border-color: #FF0000;
+	-fx-color: white;
+}
+
+#equalsButton {
+	-fx-background-color: #0000DD;
+	-fx-border-color: #0000FF;
+	-fx-color: white;
+}
+
+#calcGrid {
+	-fx-hgap: 5px;
+	-fx-vgap: 5px;
+}
+
+#calcGrid .button {
+	-fx-border-insets: 0;
+	-fx-min-width: 38px;
+	-fx-max-width: 38px;
+	-fx-min-height: 23px;
+	-fx-max-height: 23px;
+	-fx-background-color: transparent;
+	-fx-text-fill: #EEEEEE;
+	-fx-background-image: url("images/frames/button/small_thin.png");
+}
+
+#calcGrid .button:hover {
+	-fx-background-image: url("images/frames/button/small_thin_hover.png");
+}
+
+#calcGrid .button:pressed {
+	-fx-text-fill: #000000;
+	-fx-background-image: url("images/frames/button/small_thin_pressed.png");
+}
+
+#calcGrid .button.thick {
+	-fx-background-image: url("images/frames/button/small_thick.png");
+}
+
+#calcGrid .button.thick:hover {
+	-fx-background-image: url("images/frames/button/small_thick_hover.png");
+}
+
+#calcGrid .button.thick:pressed {
+	-fx-background-image: url("images/frames/button/small_thick_pressed.png");
+}
+
+#calcGrid .button.wide {
+	-fx-min-width: 100px;
+	-fx-max-width: 100px;
+	-fx-min-height: 22px;
+	-fx-max-height: 22px;
+	-fx-background-image: url("images/frames/button/big_thin.png");
+}
+
+#calcGrid .button.wide:hover {
+	-fx-background-image: url("images/frames/button/big_thin_hover.png");
+}
+
+#calcGrid .button.wide:pressed {
+	-fx-background-image: url("images/frames/button/big_thin_pressed.png");
+}
+
+#calcGrid .button.wideThick {
+	-fx-min-width: 80px;
+	-fx-max-width: 80px;
+	-fx-min-height: 23px;
+	-fx-max-height: 23px;
+	-fx-background-image: url("images/frames/button/big_thick.png");
+}
+
+#calcGrid .button.wideThick:hover {
+	-fx-background-image: url("images/frames/button/big_thick_hover.png");
+}
+
+#calcGrid .button.wideThick:pressed {
+	-fx-min-width: 80px;
+	-fx-max-width: 80px;
+	-fx-min-height: 23px;
+	-fx-max-height: 23px;
+	-fx-background-image: url("images/frames/button/big_thick_pressed.png");
+}
+
+#resultGrid {
+	-fx-border-insets: 0 2px;
+	-fx-max-height: 80px;
+	-fx-text-inner-color: #EEEEEE;
+	-fx-border-color: #EEEEEE;
+	-fx-background: transparent;
+	-fx-background-color: transparent;
+	-fx-control-inner-background: transparent;
+}
+
+.scroll-bar:vertical {
+	-fx-pref-width: 11px;
+	-fx-padding: 0 -1px 0 0;
+	-fx-border-width: 0 0 0 1px;
+	-fx-border-color: #EEEEEE;
+	-fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .decrement-button {
+	-fx-pref-height: 11px;
+	-fx-background-image: url("images/frames/scroll/arrow_up.png");
+	-fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .decrement-arrow {
+	-fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .increment-button {
+	-fx-pref-height: 11px;
+	-fx-background-image: url("images/frames/scroll/arrow_down.png");
+	-fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .increment-arrow {
+	-fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+	-fx-border-width: 1px 0 1px 0;
+	-fx-border-color: #EEEEEE;
+	-fx-min-size: 11px;
+	-fx-max-size: 11px;
+	-fx-pref-size: 11px;
+	-fx-size: 11px;
+	-fx-background-image: url("images/frames/scroll/thumb_background.png");
+	-fx-background-color: transparent;
+}

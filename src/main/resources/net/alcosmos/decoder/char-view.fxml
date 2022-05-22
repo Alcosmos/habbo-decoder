@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="0" vgap="0"
+		  styleClass="root"
+		  fx:controller="net.alcosmos.decoder.controller.CharController">
+	<padding>
+		<Insets bottom="0" left="0" right="0" top="0"/>
+	</padding>
+	
+	<GridPane id="calcGrid">
+		<VBox GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="boxText">
+			<Text text="Character"/>
+		</VBox>
+		<TextField text="64" fx:id="numberText" GridPane.rowIndex="1" GridPane.columnIndex="0" editable="true" disable="false" styleClass="boxTextField"/>
+		<Button text="Make character" GridPane.rowIndex="2" GridPane.columnIndex="0" focusTraversable="false" styleClass="wide" onMouseClicked="#makeText"/>
+		<TextField text="\@" fx:id="charText" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="true" disable="false" styleClass="boxTextField"/>
+		<Button text="Get number" GridPane.rowIndex="2" GridPane.columnIndex="1" focusTraversable="false" styleClass="wide" onMouseClicked="#makeNumber"/>
+		
+		<VBox GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2" styleClass="boxText">
+			<Text text="Character values used in Habbo"/>
+			<Text text="encoding range from @ (64) to"/>
+			<Text text="DEL (127)."/>
+			<Text/>
+			<Text text="DEL (127) is a control character,"/>
+			<Text text="therefore it has no visual"/>
+			<Text text="representation and will appear as"/>
+			<Text text="invisible."/>
+		</VBox>
+	</GridPane>
+</GridPane>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="0" vgap="0"
+		styleClass="root"
+		fx:controller="net.alcosmos.decoder.controller.FrameController">
+	<padding>
+		<Insets bottom="0" left="0" right="0" top="0"/>
+	</padding>
+	
+	<GridPane fx:id="frameGrid">
+		<!-- Top bar -->
+		<GridPane fx:id="frameTopGrid" onMousePressed="#setMouseCoords" onMouseDragged="#moveWindow" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="3">
+			<ImageView GridPane.rowIndex="0" GridPane.columnIndex="0">
+				<Image url="@../../../images/frames/window/top/frame_top_top_left.png"/>
+			</ImageView>
+			
+			<!-- Top left margin -->
+			<HBox fx:id="topTopCenterLeft" HBox.hgrow="ALWAYS" prefWidth="20" maxWidth="Infinity" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+			<!-- Top left margin -->
+			
+			<!-- Top text -->
+			<HBox fx:id="topText" HBox.hgrow="ALWAYS" maxWidth="Infinity" GridPane.rowIndex="0" GridPane.columnIndex="2">
+				<Text fx:id="topTextContent"/>
+			</HBox>
+			<!-- /Top text -->
+			
+			<!-- Top right margin -->
+			<HBox fx:id="topTopCenterRight" HBox.hgrow="ALWAYS" prefWidth="24" maxWidth="Infinity" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+			<!-- /Top right margin -->
+			
+			<!-- Close button, with top and bottom -->
+			<VBox GridPane.rowIndex="0" GridPane.columnIndex="4">
+				<ImageView>
+					<Image url="@../../../images/frames/window/top/frame_top_close_top.png"/>
+				</ImageView>
+				<HBox fx:id="closeButton" onMouseClicked="#closeWindow"/>
+				<ImageView>
+					<Image url="@../../../images/frames/window/top/frame_top_close_bottom.png"/>
+				</ImageView>
+			</VBox>
+			<!-- /Close button, with top and bottom -->
+			
+			<ImageView GridPane.rowIndex="0" GridPane.columnIndex="5">
+				<Image url="@../../../images/frames/window/top/frame_top_top_right.png"/>
+			</ImageView>
+		</GridPane>
+		<!-- /Top bar -->
+		
+		<!-- Top left + Top center + Top right -->
+		<ImageView GridPane.rowIndex="1" GridPane.columnIndex="0">
+			<Image url="@../../../images/frames/window/top/frame_top_bottom_left.png"/>
+		</ImageView>
+		<HBox fx:id="topBottomCenter" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+		<ImageView GridPane.columnIndex="2" GridPane.rowIndex="1">
+			<Image url="@../../../images/frames/window/top/frame_top_bottom_right.png"/>
+		</ImageView>
+		<!-- Top left + Top center + Top right -->
+		
+		<!-- Middle left + Content + Middle right -->
+		<HBox fx:id="middleLeft" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+		<GridPane fx:id="contentGrid" GridPane.rowIndex="2" GridPane.columnIndex="1">
+			<!--Content at rowIndex="0" columnIndex="0" -->
+		</GridPane>
+		<HBox fx:id="middleRight" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+		<!-- /Middle left + Content + Middle right -->
+		
+		<!-- Bottom left + Bottom center + Bottom right -->
+		<GridPane fx:id="frameBottomGrid" onMousePressed="#setMouseCoords" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="3">
+			<ImageView GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.rowSpan="3">
+				<Image url="@../../../images/frames/window/bottom/frame_bottom_left.png"/>
+			</ImageView>
+			
+			<HBox fx:id="bottomCenter" HBox.hgrow="ALWAYS" maxWidth="Infinity" GridPane.rowIndex="0" GridPane.columnIndex="1" GridPane.columnSpan="4"/>
+			<ImageView GridPane.rowIndex="1" GridPane.columnIndex="1" onMouseClicked="#goToPage1">
+				<Image url="@../../../images/frames/window/bottom/frame_bottom_button_1_pressed.png"/>
+			</ImageView>
+			<ImageView GridPane.rowIndex="1" GridPane.columnIndex="2" onMouseClicked="#goToPage2">
+				<Image url="@../../../images/frames/window/bottom/frame_bottom_button_2.png"/>
+			</ImageView>
+			<ImageView GridPane.rowIndex="1" GridPane.columnIndex="3" onMouseClicked="#goToPage3">
+				<Image url="@../../../images/frames/window/bottom/frame_bottom_button_3.png"/>
+			</ImageView>
+			<ImageView GridPane.rowIndex="1" GridPane.columnIndex="4" onMouseClicked="#goToPage4">
+				<Image url="@../../../images/frames/window/bottom/frame_bottom_button_4.png"/>
+			</ImageView>
+			
+			<HBox fx:id="bottomBorder" GridPane.rowIndex="2" GridPane.columnIndex="1" GridPane.columnSpan="4"/>
+			
+			<ImageView GridPane.rowIndex="0" GridPane.columnIndex="5" GridPane.rowSpan="3">
+				<Image url="@../../../images/frames/window/bottom/frame_bottom_right.png"/>
+			</ImageView>
+		</GridPane>
+		<!-- /Bottom left + Bottom center + Bottom right -->
+	</GridPane>
+</GridPane>
